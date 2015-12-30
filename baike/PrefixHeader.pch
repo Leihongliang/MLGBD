@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  baike
+//
+//  Created by qianfeng007 on 15/12/2.
+//  Copyright © 2015年 李东亚. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define VIEW_WIDTH self.view.frame.size.width
+#define VIEW_HEIGHT self.view.frame.size.height
+
+
+#define LastestURLString(count,page) [NSString stringWithFormat:@"http://m2.qiushibaike.com/article/list/latest?count=%d&page=%d",count,page]
+#define ImageURLString(count,page) [NSString stringWithFormat:@"http://m2.qiushibaike.com/article/list/images?count=%d&page=%d",count,page]
+#define SuggestURLString(count,page) [NSString stringWithFormat:@"http://m2.qiushibaike.com/article/list/suggest?count=%d&page=%d",count,page]
+#define DayURLString(count,page) [NSString stringWithFormat:@"http://m2.qiushibaike.com/article/list/day?count=%d&page=%d",count,page]
+#define WeakURlString(count,page) [NSString stringWithFormat:@"http://m2.qiushibaike.com/article/list/week?count=%d&page=%d",count,page]
+#define MonthURLString(count,page) [NSString stringWithFormat:@"http://m2.qiushibaike.com/article/list/month?count=%d&page=%d",count,page]
+#define CommentsURLString(ID) [NSString stringWithFormat:@"http://m2.qiushibaike.com/article/%@/comments?count=500&page=1",ID]
+#endif /* PrefixHeader_pch */
